@@ -1,0 +1,652 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Go Shop Some</title>
+            <style>
+
+                *{
+                    margin:0;
+                    padding:0;
+                    box-sizing: border-box;
+                }
+              
+
+                .top-bar{
+                    display: flex;                    
+                    align-items:center;
+                    padding: 20px;
+                    margin-right: 50px;
+                }
+
+                .top-bar img{
+                    position: relative;
+                    right:63px;
+                    bottom: 4px;
+                }
+                
+                #cart-logo{
+                    position: relative;
+                    left:12px;
+                }
+				
+                nav{
+                    flex: 1;
+                    text-align: right;
+                }
+				
+                nav ul{
+                    display:inline-block;
+                    list-style-type: none;
+                
+                }
+				
+                nav li{
+                    display:inline-block;
+                    margin-left: 20px;
+                   
+                }
+				
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-weight: bold;
+                }
+				
+                p{
+                    color:white;
+
+                }
+				
+                .container{
+                    width: 100%;
+                    background-image:url("images/b17.jpg");
+                }
+				
+                .row{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;		
+                }
+								
+                .col-2{
+                    flex-basis: 50%;
+                    min-width: 100px; 
+                    font-family:'Times New Roman', Times, serif;
+                }
+
+                .col-2 h1{
+                    font-size:30px;	
+					position:relative;
+					top:300px;
+                    background-color: black;
+                    color:white;
+                    padding: 2px  0px  2px 80px;
+                    margin-left: 10px;
+                }
+
+                .col-2 h2{
+                    position: relative;
+					top:285px;
+                    background-color: black;
+                    color:white;
+                    padding: 5px 2px 5px 172px;
+                    margin-left:10px;
+                }
+       
+                .col-2 img{
+                    max-width: 100%;
+                    padding: 50px 0;
+                    position: relative;
+                    bottom: 40px;	
+                }
+
+                .Explore{
+                    display: inline-block;
+                    background-color:#FB3D5F;
+                    color: white;
+                    border-radius: 30px ;
+                    padding: 8px 30px;
+                    position: relative;
+					top:295px;
+                    left:250px;
+                }
+                
+                .categories{
+                    margin: 7px 0;
+                }
+                
+                .col-3{
+                    flex-basis:30%; 
+                    min-width:250px;
+                    margin-bottom: 30px;
+                }
+				
+                .col-3 img{
+                    width:100%;
+                }
+                
+                .small-container{
+                    max-width:1080px;
+                    margin:auto;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                 
+                }
+                
+                .col-4{
+                    flex-basis: 25%;
+                    padding:10px;
+                    min-width:200px;
+                    margin-bottom:50px;
+                    transition:transform 0.5s;
+                }
+                
+            .col-4 img{
+                width: 100%;
+            }
+            
+            .title{
+                text-align: center;
+                margin: 0 auto 80px;
+                position: relative;
+                top:10px;
+                line-height: 60px;
+                text-decoration:underline;
+                color:white;
+                background-image:url("images/b28.jpeg");
+                background-size: cover;
+                
+            }
+
+            h4{
+                color: #555;
+                
+            }
+
+            h5{
+                color: #555;
+                font-size: 14px;
+            }
+
+            .rating{
+                color: #ff523b;
+            }
+
+            .col-4:hover{ 
+                transform: translateY(-5px);
+            }
+
+            .title-2{
+                text-align: center;
+                margin: 0 auto 80px;
+                line-height: 60px;
+                text-decoration: underline;
+                position: relative;
+                top:10px;
+                color:white;
+                background-image:url("images/bg3.jpeg");
+            }
+
+            .smart-band{
+               padding: 5px 5px;
+               margin:5px;
+            }
+
+            .smart-band img{
+              
+                width:100%;
+                position: relative;
+                top:50px;
+            }
+
+            .band-info{
+                color:#FEFEFE;
+            }
+
+            .band-info h1{
+                position:relative;
+                bottom: 550px;
+                left:100px;
+                font-size: 65px;
+            }
+            .band-info h2{
+                position:relative;
+                bottom: 550px;
+                left:100px;
+                font-size: 50px;
+            }
+
+            .band-info h3{
+                position:relative;
+                bottom: 535px;
+                left:100px;
+                font-size: 30px;
+            }
+            .band-info p{
+                position:relative;
+                bottom: 420px;
+                left:50px;
+                font-size: 20px;
+                color:black;
+            }
+            .band-info a{
+                position:relative;
+                bottom: 515px;
+                left:100px;
+                font-size: 20px;
+                background-color: #FF6700;
+                color:white;
+                display: inline-block;
+                border-radius: 30px ;
+                padding: 8px 30px;
+                
+            }
+            .brands{
+                margin: 10px auto;
+
+            }
+            .col-5{
+                width:110px;
+                height: 100px;
+                position: relative;
+                top:25px;
+                
+             
+            }
+            .col-5 img{ 
+                width:100%;
+                       
+            }
+
+            #col-5{
+                width:110px;
+                height: 100px;
+                position: relative;
+                top:8px;
+               
+            }
+            #col-5 img{ 
+                width:100%;
+                        
+            }
+
+      
+            .top-brands{               
+                position: relative;
+                top:34px;
+                text-decoration: underline;
+                font-size: 30px;
+            }
+
+            .container-2{
+                width:100%;
+                background-color:lightgray;
+            }
+
+            .bottom-bar{
+                color: black;
+                font-size: 14px;
+                padding: 60px 0 2px;
+                
+            }
+
+            .bottom-bar p{
+                color:black;
+            }
+
+            .bottom-bar h3{
+                color:black;
+                margin-bottom: 20px;
+                
+            }
+
+           .bottom-col-1,.bottom-col-2,.bottom-col-3,.bottom-col-4{
+               min-width: 250px;
+               margin-bottom: 20px;
+               position: relative;
+                top:40px;
+           }
+           
+           .bottom-col-1{
+                flex-basis: 30%;
+                text-align: center;
+            }
+            .bottom-col-2{
+                flex:1;
+                text-align: center;
+               
+            }
+            /* .bottom-col-2 img{
+
+            } */
+
+            .bottom-col-3,.bottom-col-4{
+                flex-basis:12%;
+                text-align: center;
+            }
+            ul{
+                list-style-type: none;
+            }
+            .app-logo{
+                margin-top: 20px;
+            }
+            .app-logo img{
+                width:140px;
+            }
+           .bottom-bar hr{
+               border: 1px solid black;
+               height: 1px;
+               margin:20px 0;
+           }
+           .copyright{
+               text-align: center;
+               position: relative;
+               bottom: 8px;
+            }
+
+            
+
+            </style>
+
+    </head>
+    <body>  
+        
+        <div class="container">
+            <div class="top-bar">
+                <div class="logo">
+                    <img src="images/GoShopSome_logo.png">
+                </div>
+                <nav>   <!-------NAV TAG DEFINES A SET OF NAVIGATION LINKS------->
+                        <ul>
+                                <li><a href="">Home</a></li>
+                                <li><a href="">Products</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Contact</a></li>
+                                <li><a href="">Account</a></li>
+                        </ul>
+                </nav>
+                <img src="images/cart.png" id="cart-logo" width="25px" height="25px">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2">
+                    <h1>You can always find something you want</h1>
+                    <br>
+                    <h2>Let's Start Shopping Right Now</h2>
+                    <a href="" class="Explore" >Explore Now &#8594;</a>   
+            </div>
+
+            <div class="col-2">
+                <img src="images/Main-backgroung_logo.png">
+            </div>
+        </div>
+    
+        <!--Categories Section-->
+        <div class="categories">
+            <div clas="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="images/a.jpg">
+                    </div>
+                    <div class="col-3">
+                        <img src="images/b.jpg">
+                    </div>
+                    <div class="col-3">
+                        <img src="images/c.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>  
+            
+        <!--Featured Category-->
+        <div class="small-container">
+            <h2 class="title">Featured Products</h2>            
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/p1.jpg">
+                    <h4>Levis Men Navy Blue Casual Shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <h5>Rs.499<h5>
+                </div>
+                <div class="col-4">
+                    <img src="images/p2.jpg">
+                    <h4>Roadster Men Green Polo T-shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <h5>Rs.494<h5>
+                </div>
+                <div class="col-4">
+                    <img src="images/p3.jpg">
+                    <h4>HRX Men White City Sneakers</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <h5>Rs.1169<h5>
+                </div>
+                <div class="col-4">
+                    <img src="images/p4.jpg">
+                    <h4>RARE Women Black Printed Dress</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <h5>Rs.799<h5>        
+                </div>    
+            </div>
+            
+            <!--Latest  Category-->
+            <h2 class="title-2">Latest Products</h2>            
+            <div class="row">               
+                <div class="col-4">
+                    <img src="images/p5.jpg">
+                    <h4> Maniac Men Olive Greeen Hood T-shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <h5>Rs.526<h5>
+                </div>
+
+                <div class="col-4">
+                    <img src="images/p6.jpg">
+                    <h4>CampusSutra Men Navy Blue & Grey Casual Shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <h5>Rs.674<h5>
+                </div>
+
+                <div class="col-4">
+                    <img src="images/p7.jpg">
+                    <h4>Campus Sutra Men Blue Jeans</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <h5>Rs.953<h5>
+                </div>
+
+                <div class="col-4">
+                   
+                    <img src="images/p8.jpg">
+                    <h4>Roadster Men Black & Blue Round Neck T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <h5>Rs.629</h5>
+                </div>
+                
+                <div class="col-4">
+                    <img src="images/p9.jpg">
+                    <h4>WROGN Men Grey Jeans</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <h5>Rs.1169<h5>
+                </div>  
+                <div class="col-4">
+                    <img src="images/p10.jpg">
+                    <h4>ADDIDAS Men White Sneakers</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <h5>Rs.1169<h5>
+                </div>  
+                <div class="col-4">
+                    
+                    <img src="images/p11.jpg">
+                    <h4>Puma Men Sweatpant Joggers</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <h5>Rs.1169<h5>
+                </div>  
+                <div class="col-4">
+                    <img src="images/p12.jpg">
+                    <h4>Realme Men Unisex Touch Screen Watch</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <h5>Rs.1169<h5>
+                </div>    
+            </div>           
+        </div>
+        
+        <!---Smart Watch --->
+        <div class="row">
+            <div class="smart-band">
+                <img src="images/Mi.jpg">
+                <div class="band-info">
+                    <h1>Mi Smart Band 5</h1>
+                    <h2>Get in the zone</h2>
+                    <h3>₹ 2,499</h3>
+                    <a href="">Buy Now &#8594;</a>
+                    <p>Everything on one screen.<br>
+                        Approximately 20% further increase in display area*<br>
+                        makes incoming calls,<br>
+                        messages and alerts easier to see and ushers in a<br>
+                        new era of unlimited watch faces.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-----BRANDS------>
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <h2 class="top-brands">Top Brands</h2>
+                    <div class="col-5" >
+                        <img src="images/Levis.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/united colors.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/zara-logo.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/pepe-jeans.png">
+                    </div>
+                    <div id="col-5" >
+                        <img src="images/adidas-2.png">
+                    </div>
+                </div>
+            </div>      
+        <div>
+
+        <!---Bottom Bar--->
+        <div class="bottom-bar">
+            <div class="container-2">
+                <div class="row">
+
+                    <div class="bottom-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and ios mobile phones.</p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png">
+                            <img src="images/app-store.png">
+                        </div>
+                    </div>
+
+                    <div class="bottom-col-2">
+                        <img src="images/GoShopSome_logo.png"><br>
+                        <p>Our Pleasure Is To Sustainably Make The Pleasure And
+                             Benefits Of  Quality Products Acessible To Many </p>
+                    </div>
+
+                    <div class="bottom-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+
+                    <div class="bottom-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>Twitter</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2021 - GoShopSome </p>
+            </div>
+        </div>
+    </body>
+</html>
