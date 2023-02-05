@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-right: 50px;
+}
+
+.top-bar img {
+  position: relative;
+  right: 63px;
+  bottom: 4px;
+}
+
+#cart-logo {
+  position: relative;
+  left: 12px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(77, 77, 206);
+  font-weight: bold;
+}
+
+p {
+  color: white;
+}
+
+.container {
+  width: 100%;
+  background-image: url("images/b17.jpg");
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-2 {
+  flex-basis: 50%;
+  min-width: 100px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.col-2 h1 {
+  font-size: 30px;
+  position: relative;
+  top: 300px;
+  background-color: black;
+  color: white;
+  padding: 2px 0px 2px 80px;
+  margin-left: 10px;
+}
+
+.col-2 h2 {
+  position: relative;
+  top: 285px;
+  background-color: black;
+  color: white;
+  padding: 5px 2px 5px 172px;
+  margin-left: 10px;
+}
+
+.col-2 img {
+  max-width: 100%;
+  padding: 50px 0;
+  position: relative;
+  bottom: 40px;
+}
+
+.Explore {
+  display: inline-block;
+  background-color: #fb3d5f;
+  color: white;
+  border-radius: 30px;
+  padding: 8px 30px;
+  position: relative;
+  top: 295px;
+  left: 250px;
+}
+
+.categories {
+  margin: 7px 0;
+}
+
+.col-3 {
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+
+.col-3 img {
+  width: 100%;
+}
+
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.col-4 {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}
+
+.col-4 img {
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  top: 10px;
+  line-height: 60px;
+  text-decoration: underline;
+  color: white;
+  background-image: url("images/b28.jpeg");
+  background-size: cover;
+}
+
+h4 {
+  color: #555;
+}
+
+h5 {
+  color: #555;
+  font-size: 14px;
+}
+
+.rating {
+  color: #ff523b;
+}
+
+.col-4:hover {
+  transform: translateY(-5px);
+}
+
+.title-2 {
+  text-align: center;
+  margin: 0 auto 80px;
+  line-height: 60px;
+  text-decoration: underline;
+  position: relative;
+  top: 10px;
+  color: white;
+  background-image: url("images/bg3.jpeg");
+}
+
+.smart-band {
+  padding: 5px 5px;
+  margin: 5px;
+}
+
+.smart-band img {
+  width: 100%;
+  position: relative;
+  top: 50px;
+}
+
+.band-info {
+  color: #fefefe;
+}
+
+.band-info h1 {
+  position: relative;
+  bottom: 550px;
+  left: 100px;
+  font-size: 65px;
+}
+
+.band-info h2 {
+  position: relative;
+  bottom: 550px;
+  left: 100px;
+  font-size: 50px;
+}
+
+.band-info h3 {
+  position: relative;
+  bottom: 535px;
+  left: 100px;
+  font-size: 30px;
+}
+
+.band-info p {
+  position: relative;
+  bottom: 420px;
+  left: 50px;
+  font-size: 20px;
+  color: black;
+}
+
+.band-info a {
+  position: relative;
+  bottom: 515px;
+  left: 100px;
+  font-size: 20px;
+  background-color: #ff6700;
+  color: white;
+  display: inline-block;
+  border-radius: 30px;
+  padding: 8px 30px;
+}
+
+.brands {
+  margin: 10px auto;
+}
+
+.col-5 {
+  width: 110px;
+  height: 100px;
+  position: relative;
+  top: 25px;
+}
+
+.col-5 img {
+  width: 100%;
+}
+
+#col-5 {
+  width: 110px;
+  height: 100px;
+  position: relative;
+  top: 8px;
+}
+
+#col-5 img {
+  width: 100%;
+}
+
+.top-brands {
+  position: relative;
+  top: 34px;
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+.container-2 {
+  width: 100%;
+  background-color: lightgray;
+}
+
+.bottom-bar {
+  color: black;
+  font-size: 14px;
+  padding: 60px 0 2px;
+}
+
+.bottom-bar p {
+  color: black;
+}
+
+.bottom-bar h3 {
+  color: black;
+  margin-bottom: 20px;
+}
+
+.bottom-col-1,
+.bottom-col-2,
+.bottom-col-3,
+.bottom-col-4 {
+  min-width: 250px;
+  margin-bottom: 20px;
+  position: relative;
+  top: 40px;
+}
+
+.bottom-col-1 {
+  flex-basis: 30%;
+  text-align: center;
+}
+
+.bottom-col-2 {
+  flex: 1;
+  text-align: center;
+}
+
+/* .bottom-col-2 img{
+
+            } */
+
+.bottom-col-3,
+.bottom-col-4 {
+  flex-basis: 12%;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.app-logo {
+  margin-top: 20px;
+}
+
+.app-logo img {
+  width: 140px;
+}
+
+.bottom-bar hr {
+  border: 1px solid black;
+  height: 1px;
+  margin: 20px 0;
+}
+
+.copyright {
+  text-align: center;
+  position: relative;
+  bottom: 8px;
+}
